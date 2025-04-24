@@ -61,7 +61,16 @@ pip install -r requirements.txt
 
 ## 📁 Folder Structure
 
-<pre> ## 📁 Folder Structure ``` documind/ ├── data_docs/ # Place .md, .txt, .docx files here ├── scripts/ │ ├── ingest_github.py │ ├── ingest_markdown.py │ └── ingest_github_issues.py ├── streamlit_app.py # Main Streamlit UI ├── requirements.txt └── README.md ``` </pre>
+``` documind/ 
+├── data_docs/ # Place .md, .txt, .docx files here 
+├── scripts/ 
+│ ├── ingest_github.py 
+│ ├── ingest_markdown.py 
+│ └── ingest_github_issues.py 
+├── streamlit_app.py # Main Streamlit UI 
+├── requirements.txt └── README.md 
+
+```
 
 ---
 
