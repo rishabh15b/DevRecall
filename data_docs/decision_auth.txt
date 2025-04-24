@@ -1,0 +1,4 @@
+We decided to move from Firebase to Auth0 due to:
+- Need for better RBAC
+- Better logging and compliance
+- Previous scaling issues with Firebase
