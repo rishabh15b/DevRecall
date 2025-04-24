@@ -61,7 +61,8 @@ pip install -r requirements.txt
 
 ## 📁 Folder Structure
 
-``` documind/ 
+``` 
+documind/ 
 ├── data_docs/ # Place .md, .txt, .docx files here 
 ├── scripts/ 
 │ ├── ingest_github.py 
