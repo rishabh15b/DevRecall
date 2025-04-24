@@ -10,7 +10,7 @@ issues = repo.get_issues(state="all")[:10]
 # Load model + vector store
 model = SentenceTransformer('all-MiniLM-L6-v2')
 client = chromadb.PersistentClient(path="./chroma")
-collection = client.get_or_create_collection(name="documind_issues")
+collection = client.get_or_create_collection(name="devrecall_issues")
 
 # Ingest issues
 for i, issue in enumerate(issues):
@@ -23,4 +23,4 @@ for i, issue in enumerate(issues):
         metadatas=[{"url": issue.html_url}]
     )
 
-print("✅ GitHub Issues embedded into DocuMind!")
+print("✅ GitHub Issues embedded into devrecall!")

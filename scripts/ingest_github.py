@@ -12,7 +12,7 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # ChromaDB local setup
 client = chromadb.PersistentClient(path="./chroma")
-collection = client.get_or_create_collection(name="documind_prs")
+collection = client.get_or_create_collection(name="devrecall_prs")
 
 # Ingest PRs into Chroma
 for i, pr in enumerate(pulls):
@@ -25,4 +25,4 @@ for i, pr in enumerate(pulls):
         metadatas=[{"url": pr.html_url}]
     )
 
-print("✅ Ingested PRs into DocuMind.")
+print("✅ Ingested PRs into devrecall.")

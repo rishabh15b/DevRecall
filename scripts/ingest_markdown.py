@@ -13,7 +13,7 @@ def get_model():
 model = get_model()
 
 client = chromadb.PersistentClient(path="./chroma")
-collection = client.get_or_create_collection(name="documind_docs")
+collection = client.get_or_create_collection(name="devrecall_docs")
 
 # Directory where your .md and .txt files are stored
 docs_dir = "./data_docs"
@@ -44,4 +44,4 @@ for filename in os.listdir(docs_dir):
     )
 
 
-print("✅ Markdown and text files embedded into DocuMind!")
+print("✅ Markdown and text files embedded into devrecall!")
