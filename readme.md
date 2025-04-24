@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 ## 🛠️ How It Works
 
-- Ingests GitHub PRs, issues, and local docs (.md, .txt, .docx)
+- Ingests GitHub PRs (via `ingest_github_prs.py`), issues, and local docs (.md, .txt, .docx)
 - Embeds them using sentence-transformers (MiniLM)
 - Stores them in ChromaDB vector database
 - Enables semantic querying via Streamlit UI
@@ -61,16 +61,17 @@ pip install -r requirements.txt
 
 ## 📁 Folder Structure
 
+This section outlines the structure of the project directory to help you navigate and understand where to place files.
+├── data_docs/              # Place .md, .txt, .docx files here to be ingested by the application
 documind/
 ├── data_docs/              # Place .md, .txt, .docx files here
 ├── scripts/
-│   ├── ingest_github.py
+│   ├── ingest_github_prs.py
 │   ├── ingest_markdown.py
 │   └── ingest_github_issues.py
 ├── streamlit_app.py        # Main UI
 ├── requirements.txt
 └── README.md
-
 ---
 
 ## ✨ Coming Soon
