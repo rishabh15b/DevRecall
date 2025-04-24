@@ -56,6 +56,7 @@ pip install -r requirements.txt
 - Stores them in ChromaDB vector database
 - Enables semantic querying via Streamlit UI
 
+```
 ---
 
 ## 📁 Folder Structure
