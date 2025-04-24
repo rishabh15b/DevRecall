@@ -2,8 +2,6 @@
 
 > 💡 *Rediscover the “why” behind engineering decisions — across pull requests, internal docs, and issues.*
 
-![DevRecall Banner](./assets/devrecall-banner.png)
-
 DevRecall is a local-first AI memory assistant for engineering teams. It ingests your GitHub PRs, issues, and internal docs to let you semantically query project history and get context-rich answers — powered by local LLMs and vector search.
 
 ---
